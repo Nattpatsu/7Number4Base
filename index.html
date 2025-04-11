@@ -3,22 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
     <title>7number4base</title>
   </head>
   <body>
-    <div class="container min-h-screen mx-auto flex flex-col justify-between">
+    <div class="container min-h-screen mx-auto flex flex-col m-4 gap-4">
       <!--Header-->
-      <div>
-        <span class="font-sans text-2xl font-bold capitalize"
-          >7number4base</span
+      <div class="flex flex-col justify-center items-center">
+        <span class="font-sans text-4xl font-bold uppercase"
+          >7 number 4 base</span
         >
       </div>
       <!--Date Birthday-->
-      <div></div>
+      <div class="flex flex-col font-sans gap-4">
+        <span class="text-2xl font-bold">วันเกิดของคุณ</span>
+        <input
+          type="date"
+          class="w-auto inline-block min-w-0 px-2 py-1 border"
+        />
+      </div>
       <!--7number4base-->
-      <div></div>
+      <div class="flex flex-col">
+        <span class="text-2xl font-bold">เลข 7 ตัวฐาน 4 ของคุณ</span>
+        <a
+          href="https://www.myhora.com/%e0%b8%94%e0%b8%b9%e0%b8%94%e0%b8%a7%e0%b8%87-%e0%b9%80%e0%b8%a5%e0%b8%82-7-%e0%b8%95%e0%b8%b1%e0%b8%a7.aspx"
+          target="_blank"
+          ><span class="text-sm text-red-500"
+            >หมายเหตุ สามารถดูได้จากเว็ปไซต์ myhora.com</span
+          ></a
+        >
+        <div class="flex flex-row justify-around items-center mt-10">
+          <div class="">
+            <input
+              type="number"
+              name="number1"
+              id="number7base4_1"
+              min="3"
+              max="21"
+              required
+            />
+            <label for="number1">ลำดับที่ 1</label>
+          </div>
+          <div>
+            <input
+              type="number"
+              name="number2"
+              id="number7base4_2"
+              min="3"
+              max="21"
+              required
+            />
+            <label for="number2">ลำดับที่ 2</label>
+          </div>
+          <div>
+            <input
+              type="number"
+              name="number3"
+              id="number7base4_3"
+              min="3"
+              max="21"
+            />
+            <label for="number3">ลำดับที่ 3</label>
+          </div>
+          <div>
+            <input
+              type="number"
+              name="number4"
+              id="number7base4_4"
+              min="3"
+              max="21"
+            />
+            <label for="number4">ลำดับที่ 4</label>
+          </div>
+          <div>
+            <input
+              type="number"
+              name="number5"
+              id="number7base4_5"
+              min="3"
+              max="21"
+            />
+            <label for="number5">ลำดับที่ 5</label>
+          </div>
+          <div>
+            <input
+              type="number"
+              name="number6"
+              id="number7base4_6"
+              min="3"
+              max="21"
+            />
+            <label for="number6">ลำดับที่ 6</label>
+          </div>
+          <div>
+            <input
+              type="number"
+              name="number7"
+              id="number7base4_7"
+              min="3"
+              max="21"
+            />
+            <label for="number7">ลำดับที่ 7</label>
+          </div>
+        </div>
+      </div>
       <!--wheel 7number4base-->
-      <div></div>
+      <div class="flex flex-col items-center mt-20">
+        <div class="w-100 h-100 bg-blue-500 rounded-full"></div>
+      </div>
     </div>
   </body>
 </html>
