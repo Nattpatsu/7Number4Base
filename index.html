@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'%3E%3Crect width='36' height='36' x='6' y='6' fill='%232f88ff' stroke='%23000' rx='3'/%3E%3Cpath stroke='%23fff' d='M18.9983 15H29L20.9939 33'/%3E%3C/g%3E%3C/svg%3E"
+    />
     <link href="./output.css" rel="stylesheet" />
     <title>7number4base</title>
   </head>
@@ -17,10 +21,7 @@
       <!--Date Birthday-->
       <div class="flex flex-col font-sans gap-4">
         <span class="text-2xl font-bold">วันเกิดของคุณ</span>
-        <input
-          type="date"
-          class="w-auto inline-block min-w-0 px-2 py-1 border"
-        />
+        <input type="date" class="min-w-0 max-w-1/3 px-2 py-1 border-1" />
       </div>
       <!--7number4base-->
       <div class="flex flex-col">
@@ -32,9 +33,10 @@
             >หมายเหตุ สามารถดูได้จากเว็ปไซต์ myhora.com</span
           ></a
         >
-        <div class="flex flex-row justify-around items-center mt-10">
-          <div class="">
+        <div class="flex flex-row justify-around items-center mt-10 mb-20">
+          <div class="flex flex-col justify-center items-center gap-4">
             <input
+              class="px-2 py-1 border-1 rounded-lg text-center"
               type="number"
               name="number1"
               id="number7base4_1"
@@ -44,8 +46,9 @@
             />
             <label for="number1">ลำดับที่ 1</label>
           </div>
-          <div>
+          <div class="flex flex-col gap-4 justify-center items-center">
             <input
+              class="px-2 py-1 border-1 rounded-lg text-center"
               type="number"
               name="number2"
               id="number7base4_2"
@@ -55,8 +58,9 @@
             />
             <label for="number2">ลำดับที่ 2</label>
           </div>
-          <div>
+          <div class="flex flex-col gap-4 justify-center items-center">
             <input
+              class="px-2 py-1 border-1 rounded-lg text-center"
               type="number"
               name="number3"
               id="number7base4_3"
@@ -65,8 +69,9 @@
             />
             <label for="number3">ลำดับที่ 3</label>
           </div>
-          <div>
+          <div class="flex flex-col gap-4 justify-center items-center">
             <input
+              class="px-2 py-1 border-1 rounded-lg text-center"
               type="number"
               name="number4"
               id="number7base4_4"
@@ -75,8 +80,9 @@
             />
             <label for="number4">ลำดับที่ 4</label>
           </div>
-          <div>
+          <div class="flex flex-col gap-4 justify-center items-center">
             <input
+              class="px-2 py-1 border-1 rounded-lg text-center"
               type="number"
               name="number5"
               id="number7base4_5"
@@ -85,8 +91,9 @@
             />
             <label for="number5">ลำดับที่ 5</label>
           </div>
-          <div>
+          <div class="flex flex-col gap-4 justify-center items-center">
             <input
+              class="px-2 py-1 border-1 rounded-lg text-center"
               type="number"
               name="number6"
               id="number7base4_6"
@@ -95,8 +102,9 @@
             />
             <label for="number6">ลำดับที่ 6</label>
           </div>
-          <div>
+          <div class="flex flex-col gap-4 justify-center items-center">
             <input
+              class="px-2 py-1 border-1 rounded-lg text-center"
               type="number"
               name="number7"
               id="number7base4_7"
@@ -108,8 +116,46 @@
         </div>
       </div>
       <!--wheel 7number4base-->
-      <div class="flex flex-col items-center mt-20">
-        <div class="w-100 h-100 bg-blue-500 rounded-full"></div>
+      <div
+        class="flex flex-col justify-center items-center outline-1 outline-red-600 w-full py-10"
+      >
+        <!--circle-->
+          <div
+            id="circle"
+            class="relative size-100 rounded-full border-2 bg-conic bg-green-500"
+          >
+          <!--year-->
+          <div class="relative w-full h-full outline-1">
+            <span class="absolute -top-8 left-1/2">2541</span>
+            <span class="absolute top-12 right-1">2542</span>
+            <span class="absolute top-60 -right-10">2543</span>
+            <span class="absolute top-94 right-18">2544</span>
+            <span class="absolute top-94 left-18">2545</span>
+            <span class="absolute top-60 -left-10">2546</span>
+            <span class="absolute top-12 left-1">2547</span>
+          </div>
+          <!--month-->
+          <div class="absolute top-1/2 left-1/2 w-1/3 h-1 bg-gray-500 rotate-[295.71deg] origin-left"></div>
+          <div class="absolute top-1/2 left-1/2 w-1/3 h-1 bg-gray-500 rotate-[346.13deg] origin-left"></div>
+          <div class="absolute top-1/2 left-1/2 w-1/3 h-1 bg-gray-500 rotate-[38.55deg] origin-left"></div>
+          <div class="absolute top-1/2 left-1/2 w-1/3 h-1 bg-gray-500 rotate-[89.97deg] origin-left"></div>
+          <div class="absolute top-1/2 left-1/2 w-1/3 h-1 bg-gray-500 rotate-[141.39deg] origin-left"></div>
+          <div class="absolute top-1/2 left-1/2 w-1/3 h-1 bg-gray-500 rotate-[192.81deg] origin-left"></div>
+          <div class="absolute top-1/2 left-1/2 w-1/3 h-1 bg-gray-500 rotate-[244.23deg] origin-left"></div>
+          <!--center point and pieces -->  
+          <div
+          class="absolute top-1/2 left-1/2 size-1 bg-black rounded-full"
+        ></div>
+        <div class="absolute top-1/2 left-1/2 w-1/2 h-1 bg-black rotate-[270deg] origin-left"></div>
+        <div class="absolute top-1/2 left-1/2 w-1/2 h-1 bg-black rotate-[320.42deg] origin-left"></div>
+        <div class="absolute top-1/2 left-1/2 w-1/2 h-1 bg-black rotate-[12.84deg] origin-left"></div>
+        <div class="absolute top-1/2 left-1/2 w-1/2 h-1 bg-black rotate-[64.26deg] origin-left"></div>
+        <div class="absolute top-1/2 left-1/2 w-1/2 h-1 bg-black rotate-[115.68deg] origin-left"></div>
+        <div class="absolute top-1/2 left-1/2 w-1/2 h-1 bg-black rotate-[167.1deg] origin-left"></div>
+        <div class="absolute top-1/2 left-1/2 w-1/2 h-1 bg-black rotate-[218.52deg] origin-left"></div>
+        </div>
+        </div>
+        </div>
       </div>
     </div>
   </body>
