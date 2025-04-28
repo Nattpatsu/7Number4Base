@@ -71,7 +71,59 @@ copilot
 
 */
 
+const birthdaydate = document.getElementById("birthdaydate");
+const number7base4_1 = document.getElementById("number7base4_1");
+const number7base4_2 = document.getElementById("number7base4_2");
+const number7base4_3 = document.getElementById("number7base4_3");
+const number7base4_4 = document.getElementById("number7base4_4");
+const number7base4_5 = document.getElementById("number7base4_5");
+const number7base4_6 = document.getElementById("number7base4_6");
+const number7base4_7 = document.getElementById("number7base4_7");
+
 // array number
 const arrGreenNumber = [9, 11, 13, 14, 15, 16, 18, 19, 21];
 const arrYellowNumber = [3, 4, 5, 6, 7, 8, 10, 17];
 const arrRedNumber = [12, 20];
+
+//all fn
+
+const test = () => {
+  console.log("click test");
+};
+
+const currentDate = (selector) => {
+  const currenttime = new Date();
+  switch (selector) {
+    case "day":
+      return currenttime.getDate();
+    case "month":
+      return currenttime.getMonth() + 1; // +1 เพราะ getMonth() เริ่มที่ 0
+    case "year":
+      return currenttime.getFullYear() + 543;
+    case "current":
+      return currenttime;
+    default:
+      return "Invalid type"; // กรณีที่ไม่ได้ใส่ค่าที่ถูกต้อง
+  }
+};
+
+const lifeCirclecal = () => {
+  //get value form HTMLtag
+
+  const birthdaydate = document.getElementById("birthdaydate").value;
+  const number7base4_1 = document.getElementById("number7base4_1");
+  const number7base4_2 = document.getElementById("number7base4_2");
+  const number7base4_3 = document.getElementById("number7base4_3");
+  const number7base4_4 = document.getElementById("number7base4_4");
+  const number7base4_5 = document.getElementById("number7base4_5");
+  const number7base4_6 = document.getElementById("number7base4_6");
+  const number7base4_7 = document.getElementById("number7base4_7");
+
+  const stepLoop = (2547 - (new Date(birthdaydate).getFullYear() + 543)) % 7;
+
+  console.log(2547 - (stepLoop - 1));
+
+  console.log(stepLoop);
+
+  console.log();
+};
