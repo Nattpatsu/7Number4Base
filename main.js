@@ -1,46 +1,49 @@
 /*
 chatgpt
+✅ ดี
+9 = พระเกตุ (โชคเคราะห์, พลังเร้นลับ, ปกป้อง)
 
-✅ กลุ่ม "ดี" – ให้พลังบวก หนุนส่ง ส่งเสริมโชค อำนาจ ความสำเร็จ
-9 – พระเกตุ: โชคที่ไม่คาดคิด, การส่งเสริม, พลังเร้นลับ
+11 = ราชาโชค (โชคดีแบบไม่เหนื่อย)
 
-11 – ราชาโชค: โชคที่ได้ง่าย ไม่เหนื่อยมาก
+13 = มหาอุจจ์ (ความสูงส่ง, เกียรติยศ)
 
-13 – มหาอุจจ์: เกียรติยศ, ความสูงส่ง, พลังหนุน
+14 = จักรพรรดิ (ความสำเร็จ, ความยิ่งใหญ่)
 
-14 – จักรพรรดิ: ความสำเร็จ, ยิ่งใหญ่
+15 = กำลังของดาวจันทร์ (เมตตา, ความอ่อนโยน, ศิลปะ ฯลฯ)
 
-15 – กำลังดาวจันทร์: ความสบาย, ความอ่อนโยน, การดูแล
+16 = โสฬส (ความอุดมสมบูรณ์, ความสุข)
 
-16 – โสฬส: ความอุดมสมบูรณ์, ความสุข
+17 = กำลังดาวพุธ (สติปัญญา, การสื่อสารดี)
 
-17 – กำลังดาวพุธ: สติปัญญา, การสื่อสาร
+18 = มหาจักรพรรดิ (อำนาจ, ความยิ่งใหญ่สูงสุด)
 
-18 – มหาจักรพรรดิ: ยิ่งใหญ่ที่สุด, อำนาจ
+19 = กำลังดาวพฤหัสฯ (ความรู้, ครู, ศีลธรรม)
 
-19 – กำลังดาวพฤหัสฯ: ปัญญา, ความดี, ความเจริญ
+21 = กำลังดาวศุกร์ (ความรัก, ศิลปะ, การเงิน)
 
-21 – กำลังดาวศุกร์: ความรัก, ความสุข, ความงาม, การเงิน
+⚖️ ปานกลาง
+3 = อังคารเล็ก (พลังงาน, ความกล้า แต่มีความรุนแรง)
 
-⚖️ กลุ่ม "ปานกลาง" – มีทั้งด้านดีและไม่ดี หรือพลังกลางๆ
-3 – อังคารเล็ก: พลังต่อสู้, ความกล้า (แต่ยัง "เล็ก")
+4 = พุธเล็ก (สติปัญญา แต่ยังไม่มั่นคง)
 
-4 – พุธเล็ก: ปัญญาเล็ก, การสื่อสารระดับเบา
+5 = พฤหัสฯ เล็ก (ธรรมะ แต่ยังไม่เข้มแข็ง)
 
-5 – พฤหัสเล็ก: ธรรมะ, ความรู้เล็กน้อย
+6 = ศุกร์เล็ก / กำลังพระอาทิตย์ (เสน่ห์, ความมั่นใจแต่ไม่ถึงจุดสูงสุด)
 
-6 – ศุกร์เล็ก / กำลังพระอาทิตย์: รักเล็กๆ + พลังแสงสว่าง
+7 = เสาร์เล็ก (ความหนักแน่นแต่ยังไม่สมบูรณ์)
 
-7 – เสาร์เล็ก: ความอดทน, ความเหนื่อยแบบพอประมาณ
+8 = ราหู / กำลังอังคาร (พลังแฝง, การเปลี่ยนแปลง, เสี่ยงทั้งดีและร้าย)
 
-10 – กำลังดาวเสาร์: ความทุกข์, ความเหนื่อยยาก — แต่ให้พลังแห่งความอดทน
+10 = กำลังดาวเสาร์ (สุขุม, รอบคอบ แต่ช้าและเหนื่อย)
 
-20 – เสาร์กำลังสอง: เหนื่อยยากมาก แต่ฝ่าฟันได้ถ้าใจถึง
 
-❌ กลุ่ม "แย่" – พลังลบ, อุปสรรค, ภัยเงียบ
-8 – ราหู / กำลังอังคาร: พลังลึกลับ, อารมณ์ร้อน, อันตรายแฝง
+❌ แย่
+20 = เสาร์กำลังสอง (ความทุกข์มาก, ผิดหวัง, ขมขื่น)
 
-12 – ราหู: ความมัวเมา, ความมืด, อบายมุข
+12 = ราหู (มัวเมา, ลุ่มหลง แต่มีเสน่ห์แบบอันตราย)
+
+
+
 */
 
 /*
@@ -111,6 +114,7 @@ const lifeCirclecal = () => {
   //get value form HTMLtag
 
   const birthdaydate = document.getElementById("birthdaydate").value;
+
   const number7base4_1 = document.getElementById("number7base4_1");
   const number7base4_2 = document.getElementById("number7base4_2");
   const number7base4_3 = document.getElementById("number7base4_3");
@@ -119,11 +123,41 @@ const lifeCirclecal = () => {
   const number7base4_6 = document.getElementById("number7base4_6");
   const number7base4_7 = document.getElementById("number7base4_7");
 
-  const stepLoop = (2547 - (new Date(birthdaydate).getFullYear() + 543)) % 7;
+  const arrnumber7base4 = [
+    number7base4_1,
+    number7base4_2,
+    number7base4_3,
+    number7base4_1,
+    number7base4_4,
+    number7base4_5,
+    number7base4_6,
+    number7base4_7,
+  ];
 
-  console.log(2547 - (stepLoop - 1));
+  const year1 = document.getElementById("year1");
+  const year2 = document.getElementById("year2");
+  const year3 = document.getElementById("year3");
+  const year4 = document.getElementById("year4");
+  const year5 = document.getElementById("year5");
+  const year6 = document.getElementById("year6");
+  const year7 = document.getElementById("year7");
 
-  console.log(stepLoop);
+  const arrYear = [year1, year2, year3, year4, year5, year6, year7];
 
-  console.log();
+  const stepLoop =
+    (currentDate("year") - (new Date(birthdaydate).getFullYear() + 543)) % 7;
+
+  const startLoop = currentDate("year") - (stepLoop - 1);
+
+  for (let i = 0; i < 7; i++) {
+    console.log(
+      startLoop + i,
+      startLoop + i - (new Date(birthdaydate).getFullYear() + 543)
+    );
+    arrYear[i].innerHTML = `${startLoop + i}, ${
+      startLoop + i - (new Date(birthdaydate).getFullYear() + 543)
+    }`;
+  }
+
+  //console.log(stepLoop);
 };
