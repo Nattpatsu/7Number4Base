@@ -115,19 +115,18 @@ const lifeCirclecal = () => {
 
   const birthdaydate = document.getElementById("birthdaydate").value;
 
-  const number7base4_1 = document.getElementById("number7base4_1");
-  const number7base4_2 = document.getElementById("number7base4_2");
-  const number7base4_3 = document.getElementById("number7base4_3");
-  const number7base4_4 = document.getElementById("number7base4_4");
-  const number7base4_5 = document.getElementById("number7base4_5");
-  const number7base4_6 = document.getElementById("number7base4_6");
-  const number7base4_7 = document.getElementById("number7base4_7");
+  const number7base4_1 = document.getElementById("number7base4_1").value;
+  const number7base4_2 = document.getElementById("number7base4_2").value;
+  const number7base4_3 = document.getElementById("number7base4_3").value;
+  const number7base4_4 = document.getElementById("number7base4_4").value;
+  const number7base4_5 = document.getElementById("number7base4_5").value;
+  const number7base4_6 = document.getElementById("number7base4_6").value;
+  const number7base4_7 = document.getElementById("number7base4_7").value;
 
   const arrnumber7base4 = [
     number7base4_1,
     number7base4_2,
     number7base4_3,
-    number7base4_1,
     number7base4_4,
     number7base4_5,
     number7base4_6,
@@ -141,6 +140,8 @@ const lifeCirclecal = () => {
   const year5 = document.getElementById("year5");
   const year6 = document.getElementById("year6");
   const year7 = document.getElementById("year7");
+
+  //logic cal year loop
 
   const arrYear = [year1, year2, year3, year4, year5, year6, year7];
 
@@ -157,6 +158,28 @@ const lifeCirclecal = () => {
     arrYear[i].innerHTML = `${startLoop + i}, ${
       startLoop + i - (new Date(birthdaydate).getFullYear() + 543)
     }`;
+  }
+
+  //logic find 7 colors
+
+  /*style="
+  background: conic-gradient(
+    yellow 0deg 51.42deg,
+    yellow 51.42deg 102.84deg,
+    green 102.84deg 154.26deg,
+    green 154.26deg 205.68deg,
+    green 205.68deg 257.1deg,
+    red 257.1deg 308.52deg,
+    green 308.52deg 0deg
+  );"*/
+  const mergeArr = [arrGreenNumber, arrYellowNumber, arrRedNumber];
+  let count = 3;
+  for (const i in arrnumber7base4) {
+    console.log(arrnumber7base4[i]);
+    for (let j = 0; j  count; j++) {
+
+      console.log(mergeArr[j][]);
+    }
   }
 
   //console.log(stepLoop);
