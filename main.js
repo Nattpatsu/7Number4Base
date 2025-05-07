@@ -82,11 +82,12 @@ const number7base4_4 = document.getElementById("number7base4_4");
 const number7base4_5 = document.getElementById("number7base4_5");
 const number7base4_6 = document.getElementById("number7base4_6");
 const number7base4_7 = document.getElementById("number7base4_7");
+const colorcircle = document.getElementById("circle");
 
 // array number
-const arrGreenNumber = [9, 11, 13, 14, 15, 16, 18, 19, 21];
-const arrYellowNumber = [3, 4, 5, 6, 7, 8, 10, 17];
-const arrRedNumber = [12, 20];
+const arrGreenNumber = ["9", "11", "13", "14", "15", "16", "18", "19", "21"];
+const arrYellowNumber = ["3", "4", "5", "6", "7", "8", "10", "17"];
+const arrRedNumber = ["12", "20"];
 
 //all fn
 
@@ -172,15 +173,25 @@ const lifeCirclecal = () => {
     red 257.1deg 308.52deg,
     green 308.52deg 0deg
   );"*/
-  const mergeArr = [arrGreenNumber, arrYellowNumber, arrRedNumber];
-  let count = 3;
-  for (const i in arrnumber7base4) {
-    console.log(arrnumber7base4[i]);
-    for (let j = 0; j  count; j++) {
 
-      console.log(mergeArr[j][]);
+  let colorResult = [];
+
+  arrnumber7base4.forEach((num) => {
+    if (arrGreenNumber.includes(num)) {
+      colorResult.push("green");
+    } else if (arrYellowNumber.includes(num)) {
+      colorResult.push("yellow");
+    } else if (arrRedNumber.includes(num)) {
+      colorResult.push("red");
     }
-  }
+  });
+
+  console.log(colorResult);
+
+  colorcircle.setAttribute(
+    "style",
+    `background: conic-gradient( ${colorResult[0]} 0deg 51.42deg, ${colorResult[1]} 51.42deg 102.84deg, ${colorResult[2]} 102.84deg 154.26deg, ${colorResult[3]} 154.26deg 205.68deg, ${colorResult[4]} 205.68deg 257.1deg, ${colorResult[5]} 257.1deg 308.52deg, ${colorResult[6]} 308.52deg 0deg);`
+  );
 
   //console.log(stepLoop);
 };
