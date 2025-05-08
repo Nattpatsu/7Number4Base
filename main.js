@@ -192,6 +192,7 @@ const lifeCirclecal = () => {
     "style",
     `background: conic-gradient( ${colorResult[0]} 0deg 51.42deg, ${colorResult[1]} 51.42deg 102.84deg, ${colorResult[2]} 102.84deg 154.26deg, ${colorResult[3]} 154.26deg 205.68deg, ${colorResult[4]} 205.68deg 257.1deg, ${colorResult[5]} 257.1deg 308.52deg, ${colorResult[6]} 308.52deg 0deg);`
   );
-
+  //block refresh
+  return false;
   //console.log(stepLoop);
 };
