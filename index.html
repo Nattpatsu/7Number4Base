@@ -13,13 +13,13 @@
   <body>
     <div class="container min-h-screen mx-auto flex flex-col m-4 gap-4">
       <!--Header-->
-      <div class="flex flex-col justify-center items-center">
+      <div class="flex flex-col justify-center items-center ">
         <span class="font-sans text-2xl font-bold uppercase sm:text-4xl"
           >7 number 4 base</span
         >
       </div>
       <!--Date Birthday-->
-      <form onsubmit="return lifeCirclecal()" class="flex flex-col m-5">
+      <form onsubmit="return lifeCirclecal()" class="flex flex-col m-5 gap-4">
       <div class="flex flex-col font-sans gap-4">
         <span class="text-2xl font-bold">วันเกิดของคุณ</span>
         <input id="birthdaydate" type="date" value="" class="min-w-0 max-w-1/3 px-2 py-1 border-1 rounded-lg" required />
@@ -129,7 +129,7 @@
         </div>        
       </div>
     <div>
-      <input type="submit"  value="Calulator" class="font-bold font-sans text-xl border-2 rounded-lg px-2 py-1 mb-10 mt-10 m hover:bg-orange-400 hover:text-white" "></input></div>
+      <input type="submit"  value="Calculate" class="font-bold font-sans text-xl border-2 rounded-lg px-2 py-1 mb-10 mt-10 m hover:bg-orange-400 hover:text-white" "></input></div>
     </form>
       <!--wheel 7number4base-->
       <div
@@ -138,7 +138,7 @@
         <!--circle-->
           <div
             id="circle"
-            class="relative size-100 rounded-full border-2"
+            class="relative size-80 rounded-full border-2 sm:size-100"
             style="
   background: conic-gradient(
     white 0deg 51.42deg,
@@ -181,7 +181,7 @@
         <div class="absolute top-1/2 left-1/2 w-1/2 h-1 bg-black rotate-[218.52deg] origin-left"></div>
         </div>
       </div>
-      <div class="flex flex-col justify-center items-start gap-4">
+      <div class="flex flex-col justify-center items-start gap-4 m-4">
         <div class="flex flex-row gap-4 items-center">
           <span class="w-10 h-1 bg-gray-500"></span>
           <span>แบ่ง 6 เดือนของทุกปี</span>

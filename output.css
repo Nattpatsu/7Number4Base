@@ -258,6 +258,10 @@
     width: calc(var(--spacing) * 1);
     height: calc(var(--spacing) * 1);
   }
+  .size-80 {
+    width: calc(var(--spacing) * 80);
+    height: calc(var(--spacing) * 80);
+  }
   .size-100 {
     width: calc(var(--spacing) * 100);
     height: calc(var(--spacing) * 100);
@@ -432,6 +436,12 @@
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
+    }
+  }
+  .sm\:size-100 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 100);
+      height: calc(var(--spacing) * 100);
     }
   }
   .sm\:text-4xl {
